@@ -1,5 +1,16 @@
+## My AHK Setup
+My AHK setup that brings some VIM commands to your entire desktop environment as well as some nice quality of life commands.
 
+Still work in progress
 
+## General informations
+
+1. `CapsLock` (held) as the main modifier
+2. `\` as a secondary modifier
+3. Made with US ANSI layout in mind, if you're using f.e the German QUARTZ feel free to switch `\` with `$`.
+4. Chrome is used as the default browser however you can change that, just search 'replace chrome.exe' in the file.
+
+_Why `/` to begin with? Because my pinky finger rests on it_
 
 ### Navigation
 
@@ -44,4 +55,3 @@
 |-------------------------|--------------|-----------------------------------------------------------------|
 | `CapsLock` (held)       | `f`          | `Ctrl + F` (Open Find)                                          |
 |                         | `t`          | Open Chrome and open a new tab                                  |
-
