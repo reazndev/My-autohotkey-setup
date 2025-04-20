@@ -2,6 +2,8 @@
 SendMode Input
 SetCapsLockState, AlwaysOff
 
+Speed := 10
+
 *CapsLock::
 CapsHeld := true
 KeyWait, CapsLock
@@ -9,6 +11,27 @@ CapsHeld := false
 Return
 
 #If (CapsHeld)
+
+;===============================================;
+; Mouse config                                  ;
+;===============================================;
+
+XButton1::Send, ^v   ; Side button 1 pastes
+XButton2::Send, ^c   ; Side button 2 copies
+
+; Scrolls faster 
+WheelUp::Send, % "{WheelUp " Speed "}"
+WheelDown::Send, % "{WheelDown " Speed "}"
+
+;===============================================;
+; Keyboard config                               ;
+;===============================================;
+
+; Add CapsLock
+Tab::CapsLock
+
+; Flowlauncher hotkey
+Space::Send, ^{Space}
 
 ; Arrow movement
 w::Send, {Up}
@@ -48,6 +71,17 @@ j::Send, {Backspace}
 h::Send, ^{Backspace}
 \ & h::Send, ^{Delete}
 
+; Copy
+b:: 
+Send, {Home} 
+Send, +{End} 
+Send, ^c
+Send, {End}
+
+c::Send, ^c
+v::Send, ^v
+
+
 ; (open chrome) & open new tab
 t:: ; Ctrl + Alt + O
 IfWinExist, ahk_exe chrome.exe ; replace chrome.exe with your browser of choice
@@ -62,6 +96,3 @@ else
     Send, ^t
 }
 Return
-
-
-#If
