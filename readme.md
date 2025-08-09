@@ -1,4 +1,9 @@
 ## My AHK Setup
+
+Outdated now since I switched from Windows to Linux and use my Hyprland config for these hotkeys now. 
+
+---
+
 My AHK setup that brings some VIM commands to your entire desktop environment as well as some nice quality of life commands.
 
 Still work in progress
